@@ -46,7 +46,20 @@ namespace user_service.Core.Services
 
         public User getUserbyId(int id)
         {
-            throw new NotImplementedException();
+            try {
+                var httpResponse = HandleOpenRequest(Method.GET, Environment.GetEnvironmentVariable("USERS.REST.URL")+$"/{id}", null);
+                if (httpResponse.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    return JsonConvert.DeserializeObject<User>(httpResponse.Content);
+
+                }
+                throw new Exception(httpResponse.ToString());
+            }
+            catch (Exception exception)
+            {
+                logger.LogError(exception.Message);
+                return null;
+            }
         }
     }
 }

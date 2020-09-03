@@ -7,7 +7,7 @@ using user_service.Core.Services;
 
 namespace user_service.Controllers
 {
-    [Route("api")]
+    [Route("api/v1/dummy")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -23,8 +23,33 @@ namespace user_service.Controllers
         public ActionResult<List<User>> GetAllUsers()
         {
             List<User> users = user.getAllUsers();
-
+            if(users == null)
+            {
+                return NotFound();
+            }
             return Ok(users);
+        }
+
+        [HttpGet]
+        [Route("users/{id}")]
+        public ActionResult<User> GetUserById(int id)
+        {
+
+            if(typeof(int) == id.GetType())
+            {
+                 User _user = user.getUserbyId(id);
+                if (_user == null)
+                {
+                    return NotFound();
+                }
+                return Ok(_user);
+            }
+            else
+            {
+                var error = "Error: Id is not a valid number";
+                return BadRequest(error);
+            }
+         
         }
     }
 }
