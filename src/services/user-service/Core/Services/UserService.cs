@@ -12,9 +12,9 @@ namespace user_service.Core.Services
     {
         private readonly ILogger<UserService> logger;
 
-        public UserService(ILogger<UserService> logger)
+        public UserService(ILogger<UserService> _logger)
         {
-            this.logger = logger;
+            logger = _logger;
         }
 
         private IRestResponse HandleOpenRequest(Method method, string url, object payload)
