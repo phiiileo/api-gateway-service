@@ -14,9 +14,7 @@
       "launchBrowser": true,
       "launchUrl": "api/users",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "USERS.REST.URL": "https://jsonplaceholder.typicode.com/users"
-
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "user_service": {
@@ -27,7 +25,6 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "USERS.REST.URL": "https://jsonplaceholder.typicode.com/users"
-
       }
     }
   }

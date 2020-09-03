@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using user_service.Core.Dtos;
+using user_service.Core.Interfaces;
 using user_service.Core.Services;
 
 namespace user_service.Controllers
@@ -10,17 +11,18 @@ namespace user_service.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        public UserController()
+        private readonly IUserService user;
+
+        public UserController(IUserService User)
         {
+            user = User;
         }
 
         [HttpGet]
         [Route("users")]
         public ActionResult<List<User>> GetAllUsers()
         {
-            var _User = new UserService();
-           
-            List<User> users = _User.getAllUsers();
+            List<User> users = user.getAllUsers();
 
             return Ok(users);
         }

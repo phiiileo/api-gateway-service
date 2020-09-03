@@ -3,7 +3,7 @@ namespace user_service.Core.Dtos
 {
     public class User
     {
-        public int id { get; set; }
-        public string name { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
