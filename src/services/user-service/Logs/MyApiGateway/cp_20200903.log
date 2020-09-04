@@ -1,0 +1,63 @@
+2020-09-03T14:07:38.8456200+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:07:38.9232960+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:07:38.9234520+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:07:38.9235240+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:07:40.7296670+01:00 [INF] (user_service.Core.Services.UserService) Data retrived successfully
+2020-09-03T14:07:42.8574340+01:00 [INF] (user_service.Core.Services.UserService) Data retrived successfully
+2020-09-03T14:17:06.2610260+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:17:06.3598480+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:17:06.3600080+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:17:06.3600880+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:17:08.1339600+01:00 [INF] (user_service.Core.Services.UserService) Data retrived successfully
+2020-09-03T14:17:10.3298310+01:00 [INF] (user_service.Core.Services.UserService) Data retrived successfully
+2020-09-03T14:22:33.6664820+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:22:33.7290790+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:22:33.7292520+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:22:33.7293020+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:22:35.2799880+01:00 [INF] (user_service.Core.Services.UserService) Data retrived successfully
+2020-09-03T14:22:37.4037350+01:00 [INF] (user_service.Core.Services.UserService) Data retrived successfully
+2020-09-03T14:28:45.8937160+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:28:45.9536660+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:28:45.9537980+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:28:45.9538450+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:32:40.3109520+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:32:40.3705960+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:32:40.3707000+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:32:40.3707440+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:33:34.9586450+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:33:35.0456910+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:33:35.0458980+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:33:35.0459580+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:34:23.1512520+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:34:23.2269580+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:34:23.2271070+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:34:23.2271760+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:39:21.7118790+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:39:21.8012250+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:39:21.8014240+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:39:21.8014960+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:43:49.1929240+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:43:49.2576050+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:43:49.2577600+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:43:49.2578220+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:46:48.8937760+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:46:48.9545960+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:46:48.9546930+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:46:48.9547350+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:47:17.8020940+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:47:17.8651320+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:47:17.8652440+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:47:17.8652880+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:47:59.8617400+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:47:59.9567110+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:47:59.9568170+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:47:59.9568620+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T14:58:57.7367480+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T14:58:57.7960430+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T14:58:57.7961360+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T14:58:57.7961790+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
+2020-09-03T15:17:50.9773140+01:00 [INF] (user_service.Core.Services.UserService) Data retrived successfully
+2020-09-03T15:31:37.1219380+01:00 [INF] (Microsoft.Hosting.Lifetime) Now listening on: "https://localhost:5001"
+2020-09-03T15:31:37.1934340+01:00 [INF] (Microsoft.Hosting.Lifetime) Application started. Press Ctrl+C to shut down.
+2020-09-03T15:31:37.1935300+01:00 [INF] (Microsoft.Hosting.Lifetime) Hosting environment: "Development"
+2020-09-03T15:31:37.1935710+01:00 [INF] (Microsoft.Hosting.Lifetime) Content root path: "/Users/emmanuelowojori/Desktop/TASKS/C#/Flutterwave/api-gateway/src/services/user-service"
