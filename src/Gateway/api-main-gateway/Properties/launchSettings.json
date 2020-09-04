@@ -4,8 +4,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:10381",
-      "sslPort": 44332
+      "applicationUrl": "http://localhost:34735",
+      "sslPort": 44394
     }
   },
   "profiles": {
@@ -17,14 +17,13 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "user_service": {
+    "api_main_gateway": {
       "commandName": "Project",
       "launchBrowser": false,
       "launchUrl": "api/users",
-      "applicationUrl": "https://localhost:6001;http://localhost:6000",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "USERS.REST.URL": "https://jsonplaceholder.typicode.com/users"
+        "ASPNETCORE_ENVIRONMENT": "Development"
       }
     }
   }
