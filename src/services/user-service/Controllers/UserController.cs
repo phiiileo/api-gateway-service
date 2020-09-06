@@ -40,7 +40,7 @@ namespace user_service.Controllers
                  User _user = user.getUserbyId(id);
                 if (_user == null)
                 {
-                    return NotFound();
+                    return NotFound("There is no user with this id");
                 }
                 return Ok(_user);
             }
@@ -50,6 +50,33 @@ namespace user_service.Controllers
                 return BadRequest(error);
             }
          
+        }
+
+        [HttpPost]
+        [Route("users")]
+        public ActionResult<User> createNewUser([FromBody] User body)
+        {
+           var new_User =  user.createNewUser(body);
+            Console.WriteLine(new_User);
+            if(new_User != null)
+            {
+                new_User.Name = body.Name;
+            return Ok(new_User);
+            }
+            return BadRequest();
+        }
+    }
+
+    public class userObject
+    {
+        public string Name { get; set; }
+
+        public int Age { get; set; }
+
+        public userObject(string name, int age)
+        {
+            Name = name;
+            Age = age;
         }
     }
 }

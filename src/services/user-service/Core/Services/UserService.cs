@@ -17,7 +17,7 @@ namespace user_service.Core.Services
             logger = _logger;
         }
 
-        private IRestResponse HandleOpenRequest(Method method, string url, object payload)
+        private IRestResponse HandleOpenRequest(Method method, string url, User payload)
         {
             var restClient = new RestClient(url);
             var request = new RestRequest(method);
@@ -60,6 +60,16 @@ namespace user_service.Core.Services
                 logger.LogError(exception.Message);
                 return null;
             }
+        }
+
+        public User createNewUser(User body)
+        {
+            var httpResponse = HandleOpenRequest(Method.POST, Environment.GetEnvironmentVariable("USERS.REST.URL"), body);
+            if (httpResponse.StatusCode == System.Net.HttpStatusCode.Created)
+            {
+                return JsonConvert.DeserializeObject<User>(httpResponse.Content);
+            }
+            return null;
         }
     }
 }
