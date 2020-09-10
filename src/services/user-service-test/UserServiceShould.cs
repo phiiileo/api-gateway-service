@@ -9,7 +9,7 @@ using user_service.Core.Dtos;
 
 namespace user_service_test
 {
-    public class UserServiceTest
+    public class UserServiceShould
     {
 
         private void setEnvironmentVariable()
@@ -71,6 +71,23 @@ namespace user_service_test
             //Assert
             Assert.Equal(_id, user.Id);
             Assert.Equal(name, user.Name);
+
+        }
+
+        [Fact]
+        public void checkDiscount()
+        {
+            //Arrange
+            setEnvironmentVariable();
+            var mock = new Mock<ILogger<DiscountService>>();
+            IDiscountService discountService = new DiscountService(mock.Object);
+            int discountId = 11;
+            string result = "Discount";
+            //Act
+            var discount = discountService.VerifyDiscount(discountId);
+
+            //Assert
+            Assert.NotEqual(result, discount);
 
         }
     }

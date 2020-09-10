@@ -9,5 +9,6 @@ namespace user_service.Core.Interfaces
         List<User> getAllUsers();
         User getUserbyId(int id);
         User createNewUser(User body);
+        string checkDiscount();
     }
 }

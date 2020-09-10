@@ -10,11 +10,11 @@ namespace user_service.Core.Services
 {
     public class UserService : IUserService
     {
-        private readonly ILogger<UserService> logger;
+        private readonly ILogger<UserService> _logger;
 
-        public UserService(ILogger<UserService> _logger)
+        public UserService(ILogger<UserService> logger)
         {
-            logger = _logger;
+            _logger = logger;
         }
 
         private IRestResponse HandleOpenRequest(Method method, string url, User payload)
@@ -32,14 +32,13 @@ namespace user_service.Core.Services
                 var httpResponse = HandleOpenRequest(Method.GET, Environment.GetEnvironmentVariable("USERS.REST.URL"), null);
                 if (httpResponse.StatusCode == System.Net.HttpStatusCode.OK)
                 {
-                    logger.LogInformation("Data retrived successfully");
                     return JsonConvert.DeserializeObject<List<User>>(httpResponse.Content);
                 }
                 throw new Exception($"Received a status code of {httpResponse.StatusCode} with a content of {httpResponse.Content}");
             }
             catch(Exception exception)
             {
-                logger.LogError(exception.Message);
+                _logger.LogError(exception.Message);
                 return null;
             }
         }
@@ -53,11 +52,11 @@ namespace user_service.Core.Services
                     return JsonConvert.DeserializeObject<User>(httpResponse.Content);
 
                 }
-                throw new Exception(httpResponse.ToString());
+                throw new Exception(httpResponse.Content);
             }
             catch (Exception exception)
             {
-                logger.LogError(exception.Message);
+                _logger.LogError(exception.Message);
                 return null;
             }
         }
@@ -70,6 +69,11 @@ namespace user_service.Core.Services
                 return JsonConvert.DeserializeObject<User>(httpResponse.Content);
             }
             return null;
+        }
+
+        public string checkDiscount()
+        {
+            throw new NotImplementedException();
         }
     }
 }

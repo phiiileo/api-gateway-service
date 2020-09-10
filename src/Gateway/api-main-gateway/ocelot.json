@@ -9,14 +9,14 @@
           "Port": 6001
         }
       ],
-      "UpstreamPathTemplate": "/api/users",
+      "UpstreamPathTemplate": "/users",
       "UpstreamHttpMethod": [ "Get", "Post" ],
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "10s",
-        "PeriodTimespan": 10,
-        "Limit": 10
+        "Period": "2s",
+        "PeriodTimespan": 2,
+        "Limit": 2
       },
       "FileCacheOptions": {
         "TtlSeconds": 15,
@@ -45,11 +45,35 @@
         "TtlSeconds": 15,
         "Region": "myregion"
       }
+    },
+    {
+      "DownstreamPathTemplate": "/users",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jsonplaceholder.typicode.com",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/phileo/user",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "10s",
+        "PeriodTimespan": 10,
+        "Limit": 10
+      },
+      "FileCacheOptions": {
+        "TtlSeconds": 15,
+        "Region": "myregion"
+      }
     }
+
 
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:5000",
+    "BaseUrl": "https://localhost:5001/api/users",
     "RateLimitOptions": {
       "QuotaExceededMessage": "{Error: You have to be calming down, limit exceeded: 10 requests per 10s}"
     }
